@@ -1,23 +1,33 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Frameset Layout</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>body{
+        background-color:rgba(0,0,0,1);
+        text-align: center;
+    }
+    a
+    {
+        background-color: #de2429;
+        border-radius: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+        
+    }
+
+    </style>
 </head>
-
-<frameset rows="25%,*">
-    <!-- First Row -->
-    <frame src="frame1.html" name="firstRow" />
-
-    <!-- Second Row -->
-    <frameset cols="25%,*">
-        <frame src="details.html" name="firstColumn" />
-        <frame src="frame4.html" name="frame4" />
-    </frameset>
-
-    <noframes>
-        <body>Your browser does not support frames.</body>
-    </noframes>
-</frameset>
-
+<body>
+    <ul id="button">
+        <li ><a href="login.html" target ="homepage" style="color:white" > Login</a></li>
+        <br><br>
+        <li ><a href="register.html" target="homepage" style="color: white">Registration</a></li>
+        <br><br>
+        <li ><a href="contact.html" target="homepage" style="color: white">Contact Us</a></li>
+    </ul>
+</body>
 </html>
